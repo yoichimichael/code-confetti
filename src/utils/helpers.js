@@ -1,6 +1,5 @@
 function isLetter() {
-  const num = Math.floor(Math.random() * 10);
-  return num > 4;
+  return 4 < Math.floor(Math.random() * 10);
 }
 
 function generateZeroThroughNine() {
