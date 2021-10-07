@@ -19,7 +19,7 @@ import Helpers from "./utils/helpers";
 const Circle = ({ color, position, radius, zIndex, borderRadius }) => {
   const properties = {
     position: "absolute",
-    borderRadius: `${borderRadius}%`,
+    borderRadius: `50%`,
     backgroundColor: `#${color}`,
     width: `${radius[0]}vh`,
     height: `${radius[1]}vh`,
@@ -50,7 +50,6 @@ function App() {
               color={p.color}
               radius={p.radius}
               zIndex={p.zIndex}
-              borderRadius={p.borderRaduis}
             />
           )})
         : null}

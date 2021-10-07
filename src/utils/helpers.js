@@ -42,10 +42,6 @@ function generateZIndex() {
   return Math.floor(Math.random() * 13);
 }
 
-function generateShapes() {
-  return Math.floor(Math.random() * 100);
-}
-
 function generateNRandomCircleProperties(n) {
   const circleProperties = [];
   for (let i = 0; i < n; i++) {
@@ -54,7 +50,6 @@ function generateNRandomCircleProperties(n) {
       position: generateRandomPosition(),
       radius: generateRandomRadius(),
       zIndex: generateZIndex(),
-      borderRaduis: generateShapes(),
     };
     circleProperties.push(cProperty);
   }
